@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set +e
+
+if [ "$1" == "install" ] || [ "$1" == "upgrade" ]; then
+    /sbin/initctl stop xsession/sysuid
+fi
+
+if [ "$1" == "upgrade" ] && [ "$2" == "1.0.0" ]; then
+    gconftool --recursive-unset /desktop/meego/status_menu/widgets
+fi
+
+exit 0
