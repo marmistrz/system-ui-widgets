@@ -39,6 +39,10 @@ MWToolsWidget::MWToolsWidget(QString widget_name, bool using_longtap, QGraphicsO
     setMinimumSize(64,64);
     setAspectRatioMode(Qt::KeepAspectRatio);
 
+    GConfItem *theme = new GConfItem("/meegotouch/theme/CurrentMeegoTheme", this);
+    currentTheme = theme->value("blanco").toString();
+    theme->deleteLater();
+
     feedback_press = new MFeedback("priority2_static_press", this);
     feedback_release = new MFeedback("priority2_static_release", this);
     feedback_long = new MFeedback("priority2_grab", this);
@@ -50,10 +54,13 @@ MWToolsWidget::MWToolsWidget(QString widget_name, bool using_longtap, QGraphicsO
 void MWToolsWidget::addIcon(QString iconId)
 {
     QString extraPath = QString("/home/user/.system-ui-widgets/%1.png").arg(iconId);
+    QString themePath = QString("/usr/share/themes/%1/meegotouch/icons/%2.png").arg(currentTheme).arg(iconId);
     if (QFile(extraPath).exists())
         m_icons.append(QImage(extraPath));
+    else if (QFile(themePath).exists())
+        m_icons.append(QImage(themePath));
     else
-        m_icons.append(QImage(QString("/usr/share/themes/blanco/meegotouch/icons/%1.png").arg(iconId)));
+        m_icons.append(QImage(QString("/usr/share/themes/base/meegotouch/icons/%1.png").arg(iconId)));
 }
 
 void MWToolsWidget::setIcon(int index)
@@ -90,10 +97,10 @@ bool MWToolsWidget::event(QEvent *event)
             action = true;
             feedback_long->play();
             longAction();
+            return true;
         }
     }
-    else
-        return MImageWidget::event(event);
+    return MImageWidget::event(event);
 }
 
 void MWToolsWidget::mousePressEvent(QGraphicsSceneMouseEvent *event)

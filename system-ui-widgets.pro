@@ -61,7 +61,7 @@ png.files = icons/icon-widgets-power.png \
 	    icons/icon-widgets-usb-sdk.png \
 	    icons/icon-widgets-usb-sync.png \
 	    icons/icon-widgets-usb-charging.png
-png.path = /usr/share/themes/blanco/meegotouch/icons
+png.path = /usr/share/themes/base/meegotouch/icons
 
 dbus.files = org.widgets.glol.context
 dbus.path = /usr/share/contextkit/providers

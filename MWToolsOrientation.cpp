@@ -6,7 +6,6 @@
 MWToolsOrientation::MWToolsOrientation(QGraphicsObject *parent):
     MWToolsWidget("orientation", false, parent)
 {
-
     addIcon("icon-widgets-orientation-auto");
     addIcon("icon-widgets-orientation-landscape");
     addIcon("icon-widgets-orientation-portait");
