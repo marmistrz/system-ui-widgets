@@ -2,8 +2,9 @@
 #define MWToolsORIENTATION_H
 
 #include "MWToolsWidget.h"
+#include <QThread>
 
-class MWToolsOrientation: public MWToolsWidget
+class MWToolsOrientation: public MWToolsWidget, public QThread
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.maemo.contextkit.Property")

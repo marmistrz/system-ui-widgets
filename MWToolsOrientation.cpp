@@ -24,6 +24,11 @@ MWToolsOrientation::~MWToolsOrientation()
 
 void MWToolsOrientation::enterDisplayEvent()
 {
+    run();
+}
+
+void MWToolsOrientation::run()
+{
     if (!m_active)
     {
         QDBusConnection::sessionBus().registerObject(DBUS_OBJECT, this, QDBusConnection::ExportScriptableSignals|
