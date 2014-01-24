@@ -11,12 +11,14 @@ LIBS += -lcreds
 LIBS += -lX11
 LIBS += -ltelepathy-qt4
 
+
 INCLUDEPATH += $$(SYSROOT_DIR)/usr/include/telepathy-1.0
 INCLUDEPATH += $$(SYSROOT_DIR)/usr/include/accounts-qt
 INCLUDEPATH += $$(SYSROOT_DIR)/usr/include/cellular-qt
 INCLUDEPATH += $$(SYSROOT_DIR)/usr/include/meegotouch
-INCLUDEPATH += $$(SYSROOT_DIR)/usr/include/system-ui/statusindicatormenu
+INCLUDEPATH += $$(SYSROOT_DIR)/usr/include/system-ui
 INCLUDEPATH += $$(SYSROOT_DIR)/usr/include/contextprovider
+INCLUDEPATH += $$(SYSROOT_DIR)/usr/src/kernel-headers/include
 
 desktop.files = statusindicatormenu-widgets.desktop
 desktop.path = /usr/share/meegotouch/applicationextensions

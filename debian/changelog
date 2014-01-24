@@ -1,0 +1,58 @@
+system-ui-widgets (1.2.0) unstable; urgency=low
+  * <Add change description here>
+
+ -- CODeRUS <coderusinbox@gmail.com>  Fri, 15 Nov 2013 16:28:18 +0600
+
+system-ui-widgets (1.0.7) unstable; urgency=low
+
+  * Some important Transfer fixies
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600
+
+system-ui-widgets (1.0.6) unstable; urgency=low
+
+  * Some important Alarm fixies
+  * Some important Transfer fixies
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600
+
+system-ui-widgets (1.0.5) unstable; urgency=low
+
+  * Some important Alarm fixies
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600
+
+system-ui-widgets (1.0.4) unstable; urgency=low
+
+  + Transfer widget. Experimental. Long click clears completed transfers.
+  * Some important Alarm fixies
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600
+
+system-ui-widgets (1.0.3) unstable; urgency=low
+
+  + Alarms widget
+  * Flash lock mode. Long tap on flash icon locking flash, so you can now record video without led flashing (turn ON video flashlight).
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600
+
+system-ui-widgets (1.0.2) unstable; urgency=low
+
+  + ALS widget
+  + Display blanking widget
+  * Margin fixies
+  * Custom icons can be placed to /home/user/.system-ui-widgets directory
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600
+
+system-ui-widgets (1.0.1) unstable; urgency=low
+
+  + Presence widget
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600
+
+system-ui-widgets (1.0.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- CODeRUS <coderusinbox@gmail.com>  Sun, 26 Aug 2012 20:28:23 +0600

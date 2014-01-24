@@ -1,0 +1,14 @@
+Source: system-ui-widgets
+Section: user/other
+Priority: optional
+Maintainer: CODeRUS <coderusinbox@gmail.com>
+Build-Depends: debhelper (>= 5), libqt4-dev, libmeegotouch-dev, libaccounts-qt-dev, libgq-gconf-dev, libtelepathy-qt4-1-dev
+Standards-Version: 3.7.3
+Homepage: <insert the upstream URL, if relevant>
+
+Package: system-ui-widgets
+Architecture: armel
+Depends: unrestricted-system-ui
+Description: Status menu extra toolbar extension
+  Background connections, Brightness, Cellular (2G-3G-DUAL), Flashlight, Orientation (Portait-Landscape-Auto), Powersave (off-on-auto), Reboot (by long press), Usb (ask-sync-mass-sdk-charging)
+XSBC-Maemo-Display-Name: Status menu extra toolbar extension | CODeRUS

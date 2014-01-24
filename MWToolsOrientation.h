@@ -15,6 +15,7 @@ public:
 
 protected:
     void enterDisplayEvent();
+    void run();
 
 private:
     void shortAction();
