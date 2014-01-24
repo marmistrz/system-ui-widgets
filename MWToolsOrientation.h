@@ -4,7 +4,7 @@
 #include "MWToolsWidget.h"
 #include <QThread>
 
-class MWToolsOrientation: public MWToolsWidget, public QThread
+class MWToolsOrientation: public MWToolsWidget
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.maemo.contextkit.Property")

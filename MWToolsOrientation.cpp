@@ -25,7 +25,7 @@ MWToolsOrientation::~MWToolsOrientation()
 
 void MWToolsOrientation::enterDisplayEvent()
 {
-    QFuture<void> future = QtConcurrent::run(dbusRegister);
+    QtConcurrent::run(this, &MWToolsOrientation::dbusRegister);
 }
 
 void MWToolsOrientation::dbusRegister()
