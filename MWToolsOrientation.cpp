@@ -1,4 +1,5 @@
 #include "MWToolsOrientation.h"
+#include <QtConcurrentRun>
 
 #define DBUS_OBJECT "/org/maemo/contextkit/Screen/TopEdge"
 #define DBUS_SERVICE "org.widgets.glol"
@@ -24,10 +25,10 @@ MWToolsOrientation::~MWToolsOrientation()
 
 void MWToolsOrientation::enterDisplayEvent()
 {
-    run();
+    QFuture<void> future = QtConcurrent::run(dbusRegister);
 }
 
-void MWToolsOrientation::run()
+void MWToolsOrientation::dbusRegister()
 {
     if (!m_active)
     {

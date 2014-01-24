@@ -5,7 +5,7 @@
 #include <QTimer>
 #include <fcntl.h>
 #include <sys/ioctl.h>
-#include <linux/videodev3.h>
+#include <linux/videodev2.h>
 
 class MWToolsFlashlight: public MWToolsWidget
 {

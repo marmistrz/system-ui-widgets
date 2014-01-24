@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set +e
-
-if [ "$1" == "configure" ]; then
-    /sbin/initctl start xsession/sysuid
-fi
-
-exit 0

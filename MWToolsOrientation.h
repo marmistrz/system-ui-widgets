@@ -15,7 +15,7 @@ public:
 
 protected:
     void enterDisplayEvent();
-    void run();
+    void dbusRegister();
 
 private:
     void shortAction();
